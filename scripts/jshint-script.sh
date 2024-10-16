@@ -1,5 +1,5 @@
-#!binbash
+#!/bin/bash
 
-jshint --exclude=node_modules --reporter=unix .  JSHint-report
+jshint --exclude="node_modules/" --reporter=unix . > JSHint-report
 
-echo $  devnull
+echo $? > /dev/null
